@@ -1,0 +1,131 @@
+.path-focus-explorer-ribbon-active {
+  color: var(--interactive-accent) !important;
+  background-color: var(--background-modifier-hover);
+}
+
+.path-focus-explorer-enabled
+.workspace-leaf-content[data-type="file-explorer"]
+.path-focus-explorer-muted {
+  opacity: 0.22;
+  filter: saturate(0.35);
+  transition:
+    opacity 160ms ease,
+    filter 160ms ease,
+    background-color 160ms ease;
+}
+
+.path-focus-explorer-enabled
+.workspace-leaf-content[data-type="file-explorer"]
+.path-focus-explorer-muted:hover {
+  opacity: 0.9;
+  filter: saturate(1);
+}
+
+.path-focus-explorer-enabled
+.workspace-leaf-content[data-type="file-explorer"]
+.path-focus-explorer-current-ancestor {
+  color: var(--text-normal);
+  font-weight: 600;
+  opacity: 1;
+  transition:
+    color 160ms ease,
+    background-color 160ms ease;
+}
+
+.path-focus-explorer-enabled
+.workspace-leaf-content[data-type="file-explorer"]
+.path-focus-explorer-current-ancestor::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 14px;
+  margin-right: 5px;
+  vertical-align: -2px;
+  border-radius: 2px;
+  background: var(--interactive-accent);
+  opacity: 0.85;
+}
+
+.path-focus-explorer-enabled
+.workspace-leaf-content[data-type="file-explorer"]
+.path-focus-explorer-related-ancestor {
+  color: var(--text-muted);
+  opacity: 0.9;
+  transition:
+    color 160ms ease,
+    opacity 160ms ease;
+}
+
+.path-focus-explorer-enabled
+.workspace-leaf-content[data-type="file-explorer"]
+.path-focus-explorer-related {
+  color: var(--text-normal);
+  font-weight: 600;
+  background-color: color-mix(
+    in srgb,
+    var(--color-cyan) 16%,
+    transparent
+  );
+  box-shadow: inset 3px 0 0 var(--color-cyan);
+  transition:
+    color 160ms ease,
+    background-color 160ms ease;
+}
+
+.path-focus-explorer-enabled
+.workspace-leaf-content[data-type="file-explorer"]
+.path-focus-explorer-current {
+  position: relative;
+  z-index: 2;
+  color: var(--text-on-accent);
+  font-weight: 700;
+  background-color: var(--interactive-accent);
+  box-shadow:
+    inset 3px 0 0 var(--color-yellow),
+    0 2px 10px color-mix(
+      in srgb,
+      var(--interactive-accent) 38%,
+      transparent
+    );
+  transform: scale(1.025);
+  transform-origin: left center;
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms cubic-bezier(0.2, 1.4, 0.4, 1);
+}
+
+.path-focus-explorer-enabled
+.workspace-leaf-content[data-type="file-explorer"]
+.path-focus-explorer-current
+.nav-file-title-content {
+  color: inherit;
+}
+
+.path-focus-explorer-enabled
+.workspace-leaf-content[data-type="file-explorer"]
+.path-focus-explorer-current
+.nav-file-tag {
+  color: inherit;
+}
+
+.path-focus-explorer-enabled
+.workspace-leaf-content[data-type="file-explorer"]
+.path-focus-explorer-flash {
+  animation: path-focus-explorer-pop 620ms cubic-bezier(0.2, 1.5, 0.35, 1);
+}
+
+@keyframes path-focus-explorer-pop {
+  0% {
+    transform: scale(1);
+  }
+
+  42% {
+    transform: scale(1.075);
+  }
+
+  100% {
+    transform: scale(1.025);
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "path-focus-explorer",
+  "name": "Path Focus Explorer",
+  "version": "1.0.0",
+  "minAppVersion": "1.13.0",
+  "description": "Highlight the active note path and directly related notes in the File Explorer.",
+  "author": "Curelove",
+  "isDesktopOnly": false
+}
