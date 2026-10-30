@@ -6,7 +6,8 @@
 [English](#features) | [中文说明](#中文说明)
 
 <!-- Drag and drop a 5-second GIF showing the File Explorer highlighting the active path and fading unrelated folders -->
-![Path Focus Explorer Demo](请在此处拖拽上传切换笔记时左侧文件树自动高亮当前路径与关联双链笔记并淡化无关文件夹的GIF.gif)
+
+![文件聚焦](https://github.com/user-attachments/assets/eceab1eb-15d9-4a91-ac4a-cbc74db533b2)
 
 ---
 
